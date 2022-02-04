@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.viewpager2recyclerviewadapter.data.Tmp" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:text="@{item.text}"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="안녕하세요"/>
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center|right"
+            android:background="@color/black"
+            />
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center|left"
+            android:background="@color/black"
+            />
+
+    </FrameLayout>
+</layout>
